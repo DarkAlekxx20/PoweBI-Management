@@ -1,7 +1,7 @@
 function login(){
-  let user = document.getElementById("txtUser").value;
+  let username = document.getElementById("txtUsername").value;
   let password = document.getElementById("txtPassword").value;
-  let userData = JSON.stringify({user:user,password:password});
+  let userData = JSON.stringify({username:username,password:password});
   params = new URLSearchParams({ userData: userData });
   fetch("api/user/login",{
     method: "POST",
@@ -13,7 +13,7 @@ function login(){
       if (data.error) {
         alert("Error al iniciar sesion");
       }else{
-        alert("Bienvenido " + user.toString());
+        alert("Bienvenido " + username.toString());
         localStorage.setItem(currentUser,JSON.stringify(data));
         window.location.href = "";
       }
