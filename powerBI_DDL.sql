@@ -17,3 +17,5 @@ CREATE TABLE usuario(
     correo				VARCHAR(45) NOT NULL,
     rol					VARCHAR(45) NOT NULL
 );
+
+SELECT * FROM usuario;

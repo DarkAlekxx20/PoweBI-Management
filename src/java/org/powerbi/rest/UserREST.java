@@ -10,9 +10,8 @@ import jakarta.ws.rs.core.Response;
 import org.powerbi.core.UserController;
 import org.powerbi.model.User;
 /**
- * @author nikob
+ * @author Alex SP
  */
-
 @Path("user")
 public class UserREST {
     @Path("login")
@@ -40,6 +39,6 @@ public class UserREST {
                   """;
             out = String.format(out, e.toString());
         }
-                return Response.status(Response.Status.OK).entity(out).build();
+            return Response.status(Response.Status.OK).entity(out).build();
     }
 }

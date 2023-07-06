@@ -6,9 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 import org.powerbi.db.ConexionMySQL;
 import org.powerbi.model.User;
-
 /**
- * @author nikob
+ * @author Alex SP
  */
 public class UserController {
     public User login(String username, String password) throws Exception{

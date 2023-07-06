@@ -1,8 +1,6 @@
 package org.powerbi.db;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
-
 /**
  * @author AlexSP
  */

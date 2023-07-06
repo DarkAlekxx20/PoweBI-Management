@@ -1,6 +1,6 @@
 package org.powerbi.model;
 /**
- * @author nikob
+ * @author Alex SP
  */
 public class User {
      private int idUsuario;
