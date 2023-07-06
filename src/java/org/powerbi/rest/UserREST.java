@@ -22,8 +22,8 @@ public class UserREST {
         Gson gson = new Gson();
         User u = new User();
         UserController uc = new UserController();
-        u = gson.fromJson(userData,User.class);
         u = uc.login(u.getNombreUsuario(),u.getContrasenia());
+        u = gson.fromJson(userData,User.class);
         try {
         if(u != null){
             out = gson.toJson(u);

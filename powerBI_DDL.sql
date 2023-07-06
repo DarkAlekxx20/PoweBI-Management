@@ -19,3 +19,4 @@ CREATE TABLE usuario(
 );
 
 SELECT * FROM usuario;
+INSERT INTO usuario (nombreUsuario,contrasenia,correo,rol) VALUES ("20002148",",Enero2003","niko.beelik@hotmail.com","Estudiante");
