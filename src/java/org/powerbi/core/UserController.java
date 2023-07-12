@@ -11,7 +11,7 @@ import org.powerbi.model.User;
  */
 public class UserController {
     public User login(String username, String password) throws Exception{
-        String sql = "SELECT * FROM usuario WHERE nombreUsuario=? AND contrasenia=?;";
+        String sql = "SELECT * FROM usuario WHERE nombreUsuario = ? AND contrasenia = ?;";
         ConexionMySQL connMySQL = new ConexionMySQL();
         Connection conn = connMySQL.open();
         PreparedStatement pstmt = conn.prepareCall(sql);

@@ -12,8 +12,10 @@ function login(){
     return response.json();
   }).then((data)=>{
     if(data.error){
+      console.log(data.error);
       Swal.fire({icon: 'error',title:'Oops...',text: 'Hubo un error al iniciar sesion :(!'});
     }else{
+      console.log(data);
       Swal.fire('Bienvenido '+username+'!','success');
       localStorage.setItem("currentUser",JSON.stringify(data));
       window.location.href="http://localhost:8080/PowerBi/Modules/Dashboard.html";
