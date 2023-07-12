@@ -3,7 +3,7 @@ package org.powerbi.model;
  * @author Alex SP
  */
 public class User {
-     private int idUsuario;
+    private int idUsuario;
     private String nombreUsuario;
     private String contrasenia;
     private String correo;
