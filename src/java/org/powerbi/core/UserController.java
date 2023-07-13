@@ -10,14 +10,14 @@ import org.powerbi.model.User;
  * @author Alex SP
  */
 public class UserController {
-    public User login(String username, String password) throws Exception{
+    public User login(String nombreUsuario, String contrasenia) throws Exception{
         String sql = "SELECT * FROM usuario WHERE nombreUsuario=? AND contrasenia=?;";
         ConexionMySQL connMySQL = new ConexionMySQL();
         Connection conn = connMySQL.open();
-        PreparedStatement pstmt = conn.prepareCall(sql);
+        PreparedStatement pstmt = conn.prepareStatement(sql);
         ResultSet rs = null;
-        pstmt.setString(1,username);
-        pstmt.setString(2,password);
+        pstmt.setString(1,nombreUsuario);
+        pstmt.setString(2,contrasenia);
         rs = pstmt.executeQuery();
         User u = null;
         if(rs.next()){
@@ -46,12 +46,12 @@ public class UserController {
     }
     
     private User fill(ResultSet rs) throws Exception{
-        User u = new User();
-        u.setIdUsuario(rs.getInt("idUsuario"));
-        u.setNombreUsuario(rs.getString("nombreUsuario"));
-        u.setContrasenia(rs.getString("contrasenia"));
-        u.setCorreo(rs.getString("correo"));
-        u.setRol(rs.getString("rol"));
-        return u;
+    User u = new User();
+    u.setIdUsuario(rs.getInt("idUsuario"));
+    u.setNombreUsuario(rs.getString("nombreUsuario"));
+    u.setContrasenia(rs.getString("contrasenia"));
+    u.setCorreo(rs.getString("correo"));
+    u.setRol(rs.getString("rol"));
+    return u;
     }
 }
