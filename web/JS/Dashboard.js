@@ -6,7 +6,7 @@ function cargarModuloAlumnos() {
     return response.text();
   }).then(function (html){
     document.getElementById("content").innerHTML = html;
-    import("../Modules/ModuloAlumnos/AlumnosController.js").then(function (controller){
+    import("../Modules/ModuloAlumnos/AlumnoController.js").then(function (controller){
       moduloAlumnos = controller;
     });
   });
