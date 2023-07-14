@@ -12,8 +12,7 @@ function login(){
     return response.json();
   }).then((data)=>{
     if(data.error){
-      Swal.fire({
-        icon:'error',title:'Error al iniciar sesion!'});
+      Swal.fire({icon:'error',title:'Error al iniciar sesion!'});
     }else{
       localStorage.setItem("currentUser",JSON.stringify(data));
       Swal.fire('Bienvenido '+username+'!','success');
