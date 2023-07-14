@@ -1,31 +1,24 @@
+let moduloAlumnos;
+let moduloMaestros;
+
 function cargarModuloAlumnos() {
-  var contenedor = document.getElementById("content");
-  // Realizar petición Fetch
-  fetch("../Modules/ModuloAlumnos/Alumnos.html")
-    .then(function (response) {
-      return response.text();
-    })
-    .then(function (html) {
-      // Insertar el contenido HTML en el contenedor
-      contenedor.innerHTML = html;
-    })
-    .catch(function (error) {
-      console.log("Error:", error);
+  fetch("../Modules/ModuloAlumnos/Alumnos.html").then(function(response){
+    return response.text();
+  }).then(function (html){
+    document.getElementById("content").innerHTML = html;
+    import("../Modules/ModuloAlumnos/AlumnosController.js").then(function (controller){
+      moduloAlumnos = controller;
     });
+  });
 }
 
 function cargarModuloMaestros() {
-  var contenedor = document.getElementById("content");
-  // Realizar petición Fetch
-  fetch("../Modules/ModuloMaestros/Maestros.html")
-    .then(function (response) {
-      return response.text();
-    })
-    .then(function (html) {
-      // Insertar el contenido HTML en el contenedor
-      contenedor.innerHTML = html;
-    })
-    .catch(function (error) {
-      console.log("Error:", error);
+  fetch("../Modules/ModuloAlumnos/Maestros.html").then(function(response){
+    return response.text();
+  }).then(function (html){
+    document.getElementById("content").innerHTML = html;
+    import("../Modules/ModuloMaestros/MaestrosController.js").then(function (controller){
+      moduloAlumnos = controller;
     });
+  });
 }
