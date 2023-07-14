@@ -13,7 +13,7 @@ function cargarModuloAlumnos() {
 }
 
 function cargarModuloMaestros() {
-  fetch("../Modules/ModuloAlumnos/Maestros.html").then(function(response){
+  fetch("../Modules/ModuloMaestros/Maestros.html").then(function(response){
     return response.text();
   }).then(function (html){
     document.getElementById("content").innerHTML = html;
