@@ -1,7 +1,6 @@
 body{
     margin: 0;
-    padding: 0;
-    
+    padding: 0;    
 }
 
   #container-principal {
@@ -12,11 +11,9 @@ body{
   }
 
   .header-sidebar{
-
     background-color: white;
     color: #333;
     padding: 0;
-
   }
 
   .header-sidebar h2{
@@ -33,13 +30,10 @@ body{
   }
 
   .sidebar ul{
-
     text-decoration: none;
     list-style: none;    
     margin-left: 0;
   }
-
-
 
   .sidebar ul li {
     height: 40px;
@@ -47,21 +41,18 @@ body{
   }
 
   .sidebar ul li:hover {
-
     scale: 1.4;
     cursor: pointer;
     background-color: grey;
     text-align: center;
-
   }
-
 
   .content {
     flex: 1;
     padding: 20px;
-
   }
 
   .content h2 {
     margin-top: 0;
+    text-align: center;
   }
