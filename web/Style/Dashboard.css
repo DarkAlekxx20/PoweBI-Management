@@ -10,6 +10,10 @@ body{
     display: flex;
   }
 
+  p{
+    text-align: center;
+  }
+
   .header-sidebar{
     background-color: white;
     color: #333;
@@ -55,4 +59,9 @@ body{
   .content h2 {
     margin-top: 0;
     text-align: center;
+  }
+
+  .video-container video{
+    width: 85%;
+    border-radius: 6px;
   }
