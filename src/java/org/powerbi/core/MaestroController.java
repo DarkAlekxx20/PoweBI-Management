@@ -28,7 +28,7 @@ public int save (Maestro m)throws Exception{
         
         Connection conn = connMySQL.open();
         
-        CallableStatement cstmt = conn.prepareCall(sql);
+        PreparedStatement cstmt = conn.prepareCall(sql);
         
         //Establecemos los valores de lso parametros  de los datos personales 
         //en el orden

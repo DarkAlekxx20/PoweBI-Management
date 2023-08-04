@@ -88,10 +88,10 @@ export function save() {
 
     if (idMaestro === 0 || idMaestro === "") {
         maestro.idMaestro = 0;
-        maestro.user.idUser = 0;
+        maestro.user.idUsuario = 0;
     }else{
         maestro.idMaestro = idMaestro;
-        maestro.user.idUse= idUsuario;
+        maestro.user.idUsuario= idUsuario;
     }
     
     maestro.nombre = nombre;
