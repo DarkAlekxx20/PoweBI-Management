@@ -8,7 +8,7 @@ public class ConexionMySQL{
             Connection conn;
     public Connection open(){
         String user = "root";
-        String password = "gatitofeliz25";
+        String password = ",Enero2003";
         String url = "jdbc:mysql://Localhost:3306/powerBI?useSSL=false&"
                 +"allowPublicKeyRetrieval=true&"+
                 "useUnicode=true&characterEncoding=utf-8";
