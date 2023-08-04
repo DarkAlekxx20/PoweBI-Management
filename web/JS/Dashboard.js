@@ -19,6 +19,7 @@ function cargarModuloMaestros(){
     document.getElementById("content").innerHTML = html;
     import("../Modules/ModuloMaestros/MaestrosController.js").then(function (controller){
       moduloMaestros = controller;
+     moduloMaestros.inicializar();
     });
   });
 }

@@ -65,3 +65,25 @@ body{
     width: 85%;
     border-radius: 6px;
   }
+
+  .formulario-maestros input{
+
+    border-radius: 5%;
+
+  }
+
+  .botonesMaestros button{
+   margin-right:  10%;
+   margin-left: 10%;
+   border: none;
+   border-radius: 7px;
+   width: 8%;
+   height: 40px;
+  }
+
+  .botonesMaestros button:hover{
+
+    scale: 1.3;
+    
+
+  }
